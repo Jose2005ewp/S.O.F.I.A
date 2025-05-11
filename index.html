@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.O.F.I.A. Sistema Online para el Fomento Intelectual y del Aprendizaje</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Use Inter font for a modern look */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for command sections */
+        .commands-section h3 {
+            font-size: 1.5rem; /* Title size for subtitles */
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        .commands-section ul {
+            list-style: disc;
+            margin-left: 1.5rem;
+        }
+        .commands-section li {
+            margin-bottom: 0.5rem;
+        }
+        /* Initially hide command sections */
+        .commands-section {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 p-6">
+
+    <header class="text-center mb-8">
+        <h1 class="text-4xl font-bold text-blue-700">S.O.F.I.A.</h1>
+        <p class="text-xl text-blue-600">Sistema Online para el Fomento Intelectual y del Aprendizaje</p>
+    </header>
+
+    <main class="container mx-auto bg-white rounded-lg shadow-lg p-6">
+        <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4 mb-8">
+            <button id="word-btn" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Comandos de Word
+            </button>
+            <button id="excel-btn" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Comandos de Excel
+            </button>
+            <button id="general-btn" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Comandos Generales
+            </button>
+        </div>
+
+        <div id="word-commands-area" class="commands-section border-t-2 border-gray-200 pt-6">
+            <h3>Atajos de Teclado en Microsoft Word</h3>
+            <p>Estos atajos te ayudarán a trabajar más rápido con documentos de texto.</p>
+            <ul>
+                <li><strong>Ctrl + C:</strong> Copiar el texto o elemento seleccionado.</li>
+                <li><strong>Ctrl + X:</strong> Cortar el texto o elemento seleccionado.</li>
+                <li><strong>Ctrl + V:</strong> Pegar el texto o elemento copiado/cortado.</li>
+                <li><strong>Ctrl + Z:</strong> Deshacer la última acción.</li>
+                <li><strong>Ctrl + Y:</strong> Rehacer la última acción.</li>
+                <li><strong>Ctrl + N:</strong> Crear un nuevo documento en blanco.</li>
+                <li><strong>Ctrl + A:</strong> Seleccionar todo el contenido del documento.</li>
+                <li><strong>Ctrl + G:</strong> Guardar el documento actual.</li>
+                <li><strong>Ctrl + P:</strong> Abrir la ventana de impresión.</li>
+                <li><strong>Ctrl + B:</strong> Poner el texto seleccionado en <strong>negrita</strong>.</li>
+                <li><strong>Ctrl + K:</strong> Poner el texto seleccionado en <em>cursiva</em>.</li>
+                <li><strong>Ctrl + S:</strong> Subrayar el texto seleccionado.</li>
+                <li><strong>Ctrl + E:</strong> Centrar el párrafo seleccionado.</li>
+                <li><strong>Ctrl + J:</strong> Justificar el párrafo seleccionado.</li>
+                <li><strong>Ctrl + L:</strong> Alinear el párrafo seleccionado a la izquierda.</li>
+                <li><strong>Ctrl + R:</strong> Alinear el párrafo seleccionado a la derecha.</li>
+                <li><strong>Ctrl + F:</strong> Abrir el panel de búsqueda.</li>
+                <li><strong>Ctrl + U:</strong> Abrir el panel de reemplazar.</li>
+                <li><strong>Ctrl + T:</strong> Crear una sangría francesa.</li>
+                <li><strong>Ctrl + D:</strong> Abrir el cuadro de diálogo Fuente.</li>
+            </ul>
+        </div>
+
+        <div id="excel-commands-area" class="commands-section border-t-2 border-gray-200 pt-6">
+            <h3>Atajos de Teclado en Microsoft Excel</h3>
+            <p>Estos atajos son útiles para navegar y editar hojas de cálculo.</p>
+            <ul>
+                <li><strong>Ctrl + C:</strong> Copiar la celda o rango seleccionado.</li>
+                <li><strong>Ctrl + X:</strong> Cortar la celda o rango seleccionado.</li>
+                <li><strong>Ctrl + V:</strong> Pegar la celda o rango copiado/cortado.</li>
+                <li><strong>Ctrl + Z:</strong> Deshacer la última acción.</li>
+                <li><strong>Ctrl + Y:</strong> Rehacer la última acción.</li>
+                <li><strong>Ctrl + N:</strong> Crear un nuevo libro de trabajo.</li>
+                <li><strong>Ctrl + A:</strong> Seleccionar toda la hoja de cálculo.</li>
+                <li><strong>Ctrl + G:</strong> Guardar el libro de trabajo actual.</li>
+                <li><strong>Ctrl + P:</strong> Abrir la ventana de impresión.</li>
+                <li><strong>Ctrl + B:</strong> Poner el contenido de la celda en <strong>negrita</strong>.</li>
+                <li><strong>Ctrl + K:</strong> Poner el contenido de la celda en <em>cursiva</em>.</li>
+                <li><strong>Ctrl + S:</strong> Subrayar el contenido de la celda.</li>
+                <li><strong>F2:</strong> Editar la celda activa.</li>
+                <li><strong>F4:</strong> Fijar referencias de celda (alterna entre absolutas, relativas y mixtas) al editar una fórmula.</li>
+                <li><strong>Ctrl + Espacio:</strong> Seleccionar la columna completa.</li>
+                <li><strong>Shift + Espacio:</strong> Seleccionar la fila completa.</li>
+                <li><strong>Ctrl + Inicio:</strong> Ir a la celda A1.</li>
+                <li><strong>Ctrl + Fin:</strong> Ir a la última celda utilizada en la hoja.</li>
+                <li><strong>Ctrl + Teclas de flecha:</strong> Moverse al borde de la región de datos actual.</li>
+                <li><strong>Shift + Teclas de flecha:</strong> Extender la selección de celdas.</li>
+                <li><strong>Ctrl + Shift + Teclas de flecha:</strong> Extender la selección hasta el borde de la región de datos actual.</li>
+                <li><strong>Ctrl + ;:</strong> Insertar la fecha actual.</li>
+                <li><strong>Ctrl + Shift + ;:</strong> Insertar la hora actual.</li>
+                <li><strong>Ctrl + 1:</strong> Abrir el cuadro de diálogo Formato de celdas.</li>
+            </ul>
+        </div>
+
+        <div id="general-commands-area" class="commands-section border-t-2 border-gray-200 pt-6">
+            <h3>Atajos de Teclado en una Computadora HP (Windows)</h3>
+            <p>Estos atajos son a nivel del sistema operativo y funcionan en la mayoría de las aplicaciones.</p>
+            <ul>
+                <li><strong>Ctrl + C:</strong> Copiar el elemento seleccionado.</li>
+                <li><strong>Ctrl + X:</strong> Cortar el elemento seleccionado.</li>
+                <li><strong>Ctrl + V:</strong> Pegar el elemento copiado/cortado.</li>
+                <li><strong>Ctrl + Z:</strong> Deshacer la última acción.</li>
+                <li><strong>Ctrl + Y:</strong> Rehacer la última acción.</li>
+                <li><strong>Ctrl + A:</strong> Seleccionar todos los elementos en una ventana o documento.</li>
+                <li><strong>Ctrl + F:</strong> Abrir la función de búsqueda en la mayoría de las aplicaciones.</li>
+                <li><strong>Alt + Tab:</strong> Cambiar entre ventanas abiertas.</li>
+                <li><strong>Alt + F4:</strong> Cerrar la ventana o aplicación activa.</li>
+                <li><strong>Windows + D:</strong> Mostrar u ocultar el escritorio.</li>
+                <li><strong>Windows + E:</strong> Abrir el Explorador de archivos.</li>
+                <li><strong>Windows + L:</strong> Bloquear la computadora.</li>
+                <li><strong>Windows + R:</strong> Abrir el cuadro de diálogo Ejecutar.</li>
+                <li><strong>Windows + Tecla de flecha izquierda/derecha:</strong> Acoplar la ventana activa a la mitad izquierda/derecha de la pantalla.</li>
+                <li><strong>Windows + Tecla de flecha arriba:</strong> Maximizar la ventana activa.</li>
+                <li><strong>Windows + Tecla de flecha abajo:</strong> Minimizar la ventana activa o restaurar la ventana acoplada.</li>
+                <li><strong>Impr Pant (o PrtScn):</strong> Tomar una captura de pantalla de toda la pantalla (se guarda en el portapapeles).</li>
+                <li><strong>Windows + Impr Pant:</strong> Tomar una captura de pantalla de toda la pantalla y guardarla automáticamente en la carpeta "Capturas de pantalla" dentro de "Imágenes".</li>
+                <li><strong>Ctrl + Shift + Esc:</strong> Abrir el Administrador de tareas.</li>
+                <li><strong>Ctrl + Alt + Supr:</strong> Abrir la pantalla de opciones de seguridad de Windows (incluye Administrador de tareas, cambiar usuario, bloquear, etc.).</li>
+                <li><strong>F5:</strong> Actualizar la ventana activa (común en navegadores web y Explorador de archivos).</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <script>
+        // References to DOM elements
+        const wordBtn = document.getElementById('word-btn');
+        const excelBtn = document.getElementById('excel-btn');
+        const generalBtn = document.getElementById('general-btn');
+
+        const wordCommandsArea = document.getElementById('word-commands-area');
+        const excelCommandsArea = document.getElementById('excel-commands-area');
+        const generalCommandsArea = document.getElementById('general-commands-area');
+
+        // Function to hide all command sections
+        function hideAllCommands() {
+            wordCommandsArea.style.display = 'none';
+            excelCommandsArea.style.display = 'none';
+            generalCommandsArea.style.display = 'none';
+        }
+
+        // Function to show a specific command section
+        function showCommands(sectionElement) {
+            hideAllCommands(); // Hide all first
+            sectionElement.style.display = 'block'; // Show the selected one
+        }
+
+        // Add event listeners to buttons
+        wordBtn.addEventListener('click', () => {
+            showCommands(wordCommandsArea);
+        });
+
+        excelBtn.addEventListener('click', () => {
+            showCommands(excelCommandsArea);
+        });
+
+        generalBtn.addEventListener('click', () => {
+            showCommands(generalCommandsArea);
+        });
+
+        // Show Word commands by default on page load
+        window.onload = () => {
+            showCommands(wordCommandsArea);
+        };
+
+    </script>
+
+</body>
+</html>
